@@ -1,1 +1,54 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 
+\begin{document}
+
+\section*{Crecimiento de un tumor: Enunciados y Fórmulas}
+
+\subsection*{I Título de la actividad: Crecimiento de un tumor.}
+
+\subsection*{II Objetivo de la actividad:}
+El objetivo es estudiar el modelo de Gompertz para describir el crecimiento y declive de poblaciones y extraer conclusiones de él.
+
+\subsection*{III Contexto y escenario del problema:}
+El modelo de Gompertz propone que la tasa de cambio de una cantidad (como el tamaño de un tumor) es proporcional a su valor actual, pero también disminuye a medida que la cantidad crece, lo que genera un crecimiento desacelerado.
+Matemáticamente, esto se expresa como:
+$$\frac{dN}{dt}=rN~\ln\left(\frac{K}{N}\right)$$
+donde:
+\begin{itemize}
+    \item $N(t)$ es el tamaño de un tumor.
+    \item $r$ es la tasa de crecimiento inicial.
+    \item $K$ es el valor límite o capacidad de carga, que representa el tamaño máximo alcanzable.
+\end{itemize}
+
+\subsection*{IV Tarea detallada: Responda lo siguiente.}
+
+\begin{enumerate}
+    \item Muestre que la ecuación (2) tiene la forma:
+    $$\frac{dN}{dt}=N(a-b~\ln~N)$$
+    Sugerencia: Definir $K=e^{a/b}$
+    
+    \item Determine la solución general de la ecuación diferencial.
+    
+    \item Dada la condición inicial $N(0)=N_0$, determine la solución particular.
+    
+    \item Determinar el comportamiento asintótico del tumor cuando $t\rightarrow\infty$ e interpretar el resultado.
+    
+    \item Suponiendo que una terapia reduce la tasa de crecimiento del tumor, después de un tiempo $t_0$ se aplica la terapia y $r'$ es la nueva tasa tal que $r'<r$. Encontrar la nueva solución para $N(t)$ cuando $t\ge t_0$ y discutir su efecto en la progresión del tumor.
+    
+    \item En la solución del ítem anterior, proponga valores para las constantes.
+    \begin{enumerate}
+        \item Grafique y compare la solución cuando se realiza la terapia y cuando no se realiza para un valor de $t_0$.
+        \item Grafique y compare la solución cuando se realiza la terapia para 3 valores distintos de $t_0$.
+    \end{enumerate}
+    
+    \item Investigue un método numérico que resuelva el problema del ítem 1. Con el mismo método numérico implemente lo necesario para resolver el problema del ítem 5.
+    
+    \item Compare sus resultados obtenidos analíticamente y numéricamente del ítem 5. Describa al menos tres observaciones resaltantes.
+    
+    \item Resuelva la ecuación diferencial del ítem 5, con uso de la IA. Valide la respuesta obtenida con el resultado del ítem 8.
+\end{enumerate}
+
+\end{document}
