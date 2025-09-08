@@ -75,3 +75,4 @@ Describir al menos **tres observaciones importantes**.
 ### 2.9 Ítem 9  
 Resolver la ecuación diferencial del ítem 5 con **uso de IA**.  
 Validar la respuesta obtenida con el resultado del ítem 8.  
+
